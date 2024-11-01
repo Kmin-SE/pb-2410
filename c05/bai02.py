@@ -94,16 +94,37 @@ def tim_max(arr):
 
 # Tìm số âm lớn nhất trong danh sách các số nguyên
 def tim_max_am(arr):
-    max = ?
-    
+    max = tim_am_dau(arr)
+
     for value in arr:
         if value < 0 and value > max:
             max = value
     return max
 
+# Hãy cho biết trong mảng có phải toàn là số âm không.
+def kt_toan_am(arr):
+    flag = True
+    for value in arr:
+        if value >= 0:
+            flag = False
+            break
+    return flag
+
+def kt_toan_am_2(arr):
+    for value in arr:
+        if value >= 0:
+            return False    
+    return True
 
 a = nhap_mang()
-print(tim_max_am(a))
+print(kt_toan_am(a))
+
+
+# max_am = tim_max_am(a)
+# if max_am == 0:
+#     print('Khong co so am')
+# else:
+#     print('So am lon nhat:', max_am)
 
 # print(tim_max(a))
 
