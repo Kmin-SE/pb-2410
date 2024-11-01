@@ -26,3 +26,5 @@ for i in range(1,4):
             print("Aaaa sai rồi, số bạn lớn quá. Hãy nhập lại!")
         else:
             print("Aaaa sai rồi, số bạn nhỏ quá. Hãy nhập lại!")       
+
+# refactor

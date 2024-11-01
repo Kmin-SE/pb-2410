@@ -51,6 +51,7 @@ def main():
         Chào mừng bạn đến với game ĐOÁN SỐ ^^
         - Tôi đã ra một con số bí mật từ 1 - 100
         - Bây giờ bạn có 3 lượt chơi hãy đoán con số đó nào.''')
+    
     secret = generate_secret_number(3, 6)
     game_play(3, secret)
     print(secret)
